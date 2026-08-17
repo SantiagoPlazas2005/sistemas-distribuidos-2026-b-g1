@@ -21,8 +21,8 @@
 ## 1. User stories worked on this week
 | HU ID | Title | Status (todo/doing/done) | Evidence (PR or commit URL) |
 |---|---|---|---|
-| HU-ARQ-001 | Define functional and non-functional requirements for the sales management system and create the preliminary architecture | done | [commit or PR URL] |
-| HU-ADR-04 | Document Consequences and Immutability of the ADR | done | [[commit or PR URL]](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/4be18bd7190f1b2bcfd50c2e0436755d84aa8a0d/02-week/hu-status/adr-001-architecture.md) |
+| HU-pdr-04 | Define functional and non-functional requirements for the sales management system and create the preliminary architecture | done | [commit or PR URL] |
+| HU-ADR-04 | Document Consequences and Immutability of the ADR | done | (https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/4be18bd7190f1b2bcfd50c2e0436755d84aa8a0d/02-week/hu-status/adr-001-architecture.md) |
 
 ## 2. My individual contribution
 - I documented the positive consequences of the chosen architecture: a clear separation of responsibilities by bounded context, a balanced split of 2 services in Java and 2 in Go (meeting the course requirement), and a centralized Auth service that simplifies role and security management.
