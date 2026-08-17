@@ -1,0 +1,173 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<title>Distributed Architectures: Styles, Trade-offs and Boundaries</title>
+<rect x="0" y="0" width="1200" height="1000" fill="#0f172a"/>
+
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Header -->
+<rect x="0" y="0" width="1200" height="100" fill="#1e293b"/>
+<rect x="0" y="99" width="1200" height="2" fill="#334155"/>
+<text x="40" y="46" fill="#f8fafc" font-size="25" font-weight="bold">Distributed Architectures: Styles, Trade-offs &amp; Boundaries</text>
+<text x="40" y="74" fill="#94a3b8" font-size="14">Client-Server · P2P · Layered · SOA · Microservices · Event-driven</text>
+<rect x="980" y="30" width="180" height="40" rx="20" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="1070" y="55" text-anchor="middle" fill="#93c5fd" font-size="12.5" font-weight="bold">SISTEMAS DISTRIBUIDOS</text>
+
+<!-- PANEL 1 -->
+<rect x="40" y="120" width="550" height="740" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<circle cx="75" cy="160" r="18" fill="#2563eb"/>
+<text x="75" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="bold">1</text>
+<text x="105" y="156" fill="#f8fafc" font-size="17" font-weight="bold">Architecture Styles</text>
+<text x="105" y="176" fill="#94a3b8" font-size="12.5">Who talks to whom, and who owns what</text>
+<line x1="60" y1="195" x2="570" y2="195" stroke="#334155" stroke-width="1"/>
+
+<rect x="60" y="205" width="510" height="46" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="75" y="223" fill="#dbeafe" font-size="12">Architecture = boundaries + communication. Boundaries</text>
+<text x="75" y="240" fill="#dbeafe" font-size="12">follow business capability, not technical layers.</text>
+
+<!-- Style grid: row 1 -->
+<rect x="60" y="270" width="240" height="112" rx="8" fill="#374151" stroke="#64748b" stroke-width="1"/>
+<text x="74" y="291" fill="#f8fafc" font-size="12.5" font-weight="bold">Client-Server</text>
+<text x="74" y="309" fill="#cbd5e1" font-size="10.5">Idea: clients call one server</text>
+<text x="74" y="325" fill="#cbd5e1" font-size="10.5">Watch: single bottleneck / SPOF</text>
+<text x="74" y="341" fill="#cbd5e1" font-size="10.5">Fits: simple apps, one authority</text>
+<text x="74" y="365" fill="#94a3b8" font-size="10">Server ← clients (bottleneck)</text>
+
+<rect x="315" y="270" width="240" height="112" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="329" y="291" fill="#f8fafc" font-size="12.5" font-weight="bold">Peer-to-Peer (P2P)</text>
+<text x="329" y="309" fill="#ddd6fe" font-size="10.5">Idea: every node is client + server</text>
+<text x="329" y="325" fill="#ddd6fe" font-size="10.5">Watch: coordination, security</text>
+<text x="329" y="341" fill="#ddd6fe" font-size="10.5">Fits: resilience, file sharing</text>
+<text x="329" y="365" fill="#c4b5fd" font-size="10">No single point of failure</text>
+
+<!-- row 2 -->
+<rect x="60" y="397" width="240" height="112" rx="8" fill="#374151" stroke="#64748b" stroke-width="1"/>
+<text x="74" y="418" fill="#f8fafc" font-size="12.5" font-weight="bold">Layered / N-tier</text>
+<text x="74" y="436" fill="#cbd5e1" font-size="10.5">Idea: presentation → logic → data</text>
+<text x="74" y="452" fill="#cbd5e1" font-size="10.5">Watch: distributed monolith if split badly</text>
+<text x="74" y="468" fill="#cbd5e1" font-size="10.5">Fits: classic business apps</text>
+
+<rect x="315" y="397" width="240" height="112" rx="8" fill="#7c2d12" stroke="#ea580c" stroke-width="1"/>
+<text x="329" y="418" fill="#f8fafc" font-size="12.5" font-weight="bold">SOA</text>
+<text x="329" y="436" fill="#fed7aa" font-size="10.5">Idea: coarse services + an ESB/bus</text>
+<text x="329" y="452" fill="#fed7aa" font-size="10.5">Watch: heavy middleware, central bus</text>
+<text x="329" y="468" fill="#fed7aa" font-size="10.5">Fits: enterprise integration</text>
+
+<!-- row 3 -->
+<rect x="60" y="524" width="240" height="112" rx="8" fill="#134e4a" stroke="#0d9488" stroke-width="1"/>
+<text x="74" y="545" fill="#f8fafc" font-size="12.5" font-weight="bold">Microservices</text>
+<text x="74" y="563" fill="#99f6e4" font-size="10.5">Idea: small services by capability,</text>
+<text x="74" y="577" fill="#99f6e4" font-size="10.5">each owns its data</text>
+<text x="74" y="593" fill="#99f6e4" font-size="10.5">Watch: operational complexity</text>
+<text x="74" y="609" fill="#99f6e4" font-size="10.5">Fits: independent scale &amp; deploy</text>
+
+<rect x="315" y="524" width="240" height="112" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="329" y="545" fill="#f8fafc" font-size="12.5" font-weight="bold">Event-Driven</text>
+<text x="329" y="563" fill="#ddd6fe" font-size="10.5">Idea: parts react to events (async)</text>
+<text x="329" y="579" fill="#ddd6fe" font-size="10.5">Watch: eventual consistency,</text>
+<text x="329" y="593" fill="#ddd6fe" font-size="10.5">harder debugging</text>
+<text x="329" y="609" fill="#ddd6fe" font-size="10.5">Fits: decoupling, traffic spikes</text>
+
+<rect x="60" y="655" width="510" height="95" rx="8" fill="#3b0d0d" stroke="#7f1d1d" stroke-width="1"/>
+<text x="75" y="676" fill="#fecaca" font-size="12" font-weight="bold">⚠ The distributed monolith</text>
+<text x="75" y="695" fill="#fca5a5" font-size="11.5">You split into services, but they share a database and</text>
+<text x="75" y="711" fill="#fca5a5" font-size="11.5">must deploy together — you paid for the network and kept</text>
+<text x="75" y="727" fill="#fca5a5" font-size="11.5">all the coupling. If services can't deploy independently,</text>
+<text x="75" y="743" fill="#fca5a5" font-size="11.5">they are not microservices.</text>
+
+<rect x="60" y="765" width="510" height="80" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="75" y="785" fill="#dbeafe" font-size="12" font-weight="bold">Common mistakes</text>
+<text x="75" y="803" fill="#bfdbfe" font-size="11">• Splitting by technical layer ("UI service", "DB service")</text>
+<text x="75" y="819" fill="#bfdbfe" font-size="11">• Sharing one database across services</text>
+<text x="75" y="835" fill="#bfdbfe" font-size="11">• Adding a bus/ESB "because enterprise" when unneeded</text>
+
+<!-- PANEL 2 -->
+<rect x="610" y="120" width="550" height="740" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<circle cx="645" cy="160" r="18" fill="#2563eb"/>
+<text x="645" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="bold">2</text>
+<text x="675" y="156" fill="#f8fafc" font-size="17" font-weight="bold">Trade-offs &amp; the Decision</text>
+<text x="675" y="176" fill="#94a3b8" font-size="12.5">Split for a reason, not for fashion</text>
+<line x1="630" y1="195" x2="1140" y2="195" stroke="#334155" stroke-width="1"/>
+
+<text x="630" y="222" fill="#f8fafc" font-size="13.5" font-weight="bold">Microservices — split by business capability</text>
+
+<rect x="815" y="235" width="150" height="36" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+<text x="890" y="258" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">API Gateway</text>
+
+<line x1="890" y1="271" x2="700" y2="310" stroke="#94a3b8" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="890" y1="271" x2="890" y2="310" stroke="#94a3b8" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="890" y1="271" x2="1080" y2="310" stroke="#94a3b8" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<rect x="630" y="310" width="140" height="60" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="700" y="332" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">Orders</text>
+<text x="700" y="350" text-anchor="middle" fill="#ddd6fe" font-size="10">orders db</text>
+
+<rect x="820" y="310" width="140" height="60" rx="8" fill="#134e4a" stroke="#0d9488" stroke-width="1"/>
+<text x="890" y="332" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">Payments</text>
+<text x="890" y="350" text-anchor="middle" fill="#99f6e4" font-size="10">payments db</text>
+
+<rect x="1010" y="310" width="140" height="60" rx="8" fill="#7c2d12" stroke="#ea580c" stroke-width="1"/>
+<text x="1080" y="332" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">Inventory</text>
+<text x="1080" y="350" text-anchor="middle" fill="#fed7aa" font-size="10">inventory db</text>
+
+<text x="890" y="392" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-style="italic">each service owns its data — no shared DB — contracts only (REST/gRPC/events)</text>
+
+<rect x="630" y="410" width="500" height="80" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="645" y="430" fill="#dbeafe" font-size="12" font-weight="bold">The trade-off nobody escapes</text>
+<text x="645" y="449" fill="#bfdbfe" font-size="11.5">Microservices trade development independence for</text>
+<text x="645" y="465" fill="#bfdbfe" font-size="11.5">operational complexity: discovery, network failures, tracing,</text>
+<text x="645" y="481" fill="#bfdbfe" font-size="11.5">versioned contracts, data spread across stores.</text>
+
+<rect x="630" y="505" width="500" height="115" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+<text x="645" y="525" fill="#f8fafc" font-size="12" font-weight="bold">Scenario: "should we split this?"</text>
+<text x="645" y="544" fill="#e2e8f0" font-size="11.5">Catalog needs to handle Black-Friday spikes; the rest of</text>
+<text x="645" y="560" fill="#e2e8f0" font-size="11.5">the shop is calm. Catalog is a real bounded context with</text>
+<text x="645" y="576" fill="#e2e8f0" font-size="11.5">its own data and a real scaling need → extract it.</text>
+<text x="645" y="596" fill="#94a3b8" font-size="11">Orders and Payments stay together — they're tightly</text>
+<text x="645" y="612" fill="#94a3b8" font-size="11">coupled by a transaction; coordinate with a Saga later.</text>
+
+<rect x="630" y="635" width="500" height="90" rx="8" fill="#3b2b06" stroke="#b45309" stroke-width="1"/>
+<text x="645" y="655" fill="#fde68a" font-size="12" font-weight="bold">Default choice</text>
+<text x="645" y="674" fill="#fcd34d" font-size="11.5">Start as a well-modularized monolith. Extract a service</text>
+<text x="645" y="690" fill="#fcd34d" font-size="11.5">only when a boundary AND a scaling need are both real —</text>
+<text x="645" y="706" fill="#fcd34d" font-size="11.5">not because "big companies do it".</text>
+
+<rect x="630" y="740" width="500" height="55" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="645" y="762" fill="#dbeafe" font-size="11.5">Record the choice in an ADR (adr-NNN.md) together with</text>
+<text x="645" y="778" fill="#dbeafe" font-size="11.5">the alternatives you rejected — nobody should have to guess why.</text>
+
+<rect x="630" y="805" width="500" height="45" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+<text x="645" y="825" fill="#f8fafc" font-size="11.5" font-style="italic">A good microservice boundary follows a business</text>
+<text x="645" y="840" fill="#f8fafc" font-size="11.5" font-style="italic">capability that owns its data — never a technical layer.</text>
+
+<!-- Bottom flow -->
+<text x="600" y="900" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="bold">Architectural decision flow</text>
+
+<rect x="60" y="915" width="160" height="42" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+<text x="140" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">1. Domain</text>
+<line x1="220" y1="936" x2="244" y2="936" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="244" y="915" width="160" height="42" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="324" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">2. Boundaries</text>
+<line x1="404" y1="936" x2="428" y2="936" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="428" y="915" width="160" height="42" rx="8" fill="#134e4a" stroke="#0d9488" stroke-width="1"/>
+<text x="508" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">3. Compare styles</text>
+<line x1="588" y1="936" x2="612" y2="936" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="612" y="915" width="160" height="42" rx="8" fill="#7c2d12" stroke="#ea580c" stroke-width="1"/>
+<text x="692" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">4. Decide</text>
+<line x1="772" y1="936" x2="796" y2="936" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="796" y="915" width="160" height="42" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="876" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">5. Document ADR</text>
+<line x1="956" y1="936" x2="980" y2="936" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="980" y="915" width="160" height="42" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+<text x="1060" y="941" text-anchor="middle" fill="#f8fafc" font-size="11.5" font-weight="bold">6. Backlog</text>
+
+<text x="600" y="980" text-anchor="middle" fill="#64748b" font-size="12">Principle: split by capability, not by fashion — a picture of an architecture is worth a page of English.</text>
+</svg>
