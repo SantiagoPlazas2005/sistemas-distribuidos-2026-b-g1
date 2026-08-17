@@ -1,9 +1,5 @@
-<!-- HU-STATUS TEMPLATE - do NOT remove the <!-- ... --> markers or the table headers.
-     Your weekly grade is read AUTOMATICALLY from this file:
-       02-week/hu-status/README.md  (inside YOUR fork). English. -->
-
 # Weekly status - Week 02
-<!-- CONFIG-START - must match your profile repo (username/username) CONFIG -->
+
 - FULL_NAME: Fredman Santiago Plazas Artunduaga
 - GITHUB_USER: SantiagoPlazas2005
 - TEAM: Group - PRJ-GESTION-VENTAS-V1
@@ -21,7 +17,7 @@
 ## 1. User stories worked on this week
 | HU ID | Title | Status (todo/doing/done) | Evidence (PR or commit URL) |
 |---|---|---|---|
-| HU-pdr-04 | Define functional and non-functional requirements for the sales management system and create the preliminary architecture | done | [commit or PR URL] |
+| HU-pdr-04 | Risks, work plan, acceptance criteria and glossary | done | [[commit or PR URL]](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/main/01-week/hu-status/pdr.md) |
 | HU-ADR-04 | Document Consequences and Immutability of the ADR | done | (https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/4be18bd7190f1b2bcfd50c2e0436755d84aa8a0d/02-week/hu-status/adr-001-architecture.md) |
 
 ## 2. My individual contribution
