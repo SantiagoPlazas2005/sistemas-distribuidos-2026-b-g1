@@ -2,15 +2,18 @@ Weekly status - Week 01
 <!-- CONFIG-START - must match your profile repo (username/username) CONFIG -->
 FULL_NAME: Fredman Santiago Plazas Artunduaga
 GITHUB_USER: SantiagoPlazas2005
-TEAM: Group - PRJ-FERRETERIA-V13
+TEAM: Group - PRJ-GESTION-VENTAS-V1
 SPRINT_GOAL: Convert the hardware store (ferretería) product brief into a preliminary design review: risk assessment, work plan, acceptance criteria, and next steps for a financial control system.
 <!-- CONFIG-END -->
-Team Members
-Full Name	GitHub User
+## Team Members
+
+| Full Name                          | GitHub User                                                 |
+| ----------------------------       | ------------------------------------------                  |
 | Sergio Andres Ordoñez Diaz         | https://github.com/SergioAndres17                           |
 | Fredman Santiago Plazas Artunduaga | https://github.com/SantiagoPlazas2005                       |
 | Jordan Ramirez Gallego             | https://github.com/JordanRG420                              |
 | Angel Gustavo Solano Trujillo      |  https://github.com/AsolanoT                                |
+
 1. User stories worked on this week
 HU ID	Title	Status (todo/doing/done)	Evidence (PR or commit URL)
 HU-PDR-002	Define risks, work plan, acceptance criteria, and next steps for the financial control PDR	done	[commit or PR URL]
