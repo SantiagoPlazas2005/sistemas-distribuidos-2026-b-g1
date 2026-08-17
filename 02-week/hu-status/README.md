@@ -6,6 +6,12 @@
 - SPRINT_GOAL: Document the Consequences section of the architecture ADR for the sales management system, capturing the trade-offs of the service split and communication strategy.
 <!-- CONFIG-END -->
 
+## Project Board
+
+| Board Name          | URL                                              |
+| -------------------- | ------------------------------------------------ |
+| SynkroTech - Sprint  | https://github.com/users/AsolanoT/projects/4  
+
 ## Team Members
 | Full Name                          | GitHub User                           |
 | ----------------------------------- | -------------------------------------- |
