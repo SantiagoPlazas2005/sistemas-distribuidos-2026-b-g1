@@ -1,0 +1,167 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<title>Scrum vs Kanban: Technical Comparison</title>
+<rect x="0" y="0" width="1200" height="1000" fill="#0f172a"/>
+
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Header -->
+<rect x="0" y="0" width="1200" height="100" fill="#1e293b"/>
+<rect x="0" y="99" width="1200" height="2" fill="#334155"/>
+<text x="40" y="46" fill="#f8fafc" font-size="25" font-weight="bold">Scrum vs Kanban — Technical Comparison</text>
+<text x="40" y="74" fill="#94a3b8" font-size="14">Two agile frameworks for managing the flow of work</text>
+<rect x="980" y="30" width="180" height="40" rx="20" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="1070" y="55" text-anchor="middle" fill="#93c5fd" font-size="12.5" font-weight="bold">AGILE / SCM</text>
+
+<!-- PANEL SCRUM -->
+<rect x="40" y="120" width="540" height="700" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<circle cx="75" cy="160" r="18" fill="#7c3aed"/>
+<text x="75" y="165" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="bold">S</text>
+<text x="105" y="156" fill="#f8fafc" font-size="19" font-weight="bold">Scrum</text>
+<text x="105" y="176" fill="#94a3b8" font-size="12.5">Time-boxed iterations, fixed roles</text>
+<line x1="60" y1="195" x2="560" y2="195" stroke="#334155" stroke-width="1"/>
+
+<!-- spec table -->
+<text x="60" y="223" fill="#c4b5fd" font-size="12" font-weight="bold">Cadence</text>
+<text x="205" y="223" fill="#e2e8f0" font-size="12">Fixed-length sprints (1–4 weeks)</text>
+<line x1="60" y1="233" x2="560" y2="233" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="259" fill="#c4b5fd" font-size="12" font-weight="bold">Roles</text>
+<text x="205" y="259" fill="#e2e8f0" font-size="12">Product Owner, Scrum Master, Dev Team</text>
+<line x1="60" y1="269" x2="560" y2="269" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="295" fill="#c4b5fd" font-size="12" font-weight="bold">Planning</text>
+<text x="205" y="295" fill="#e2e8f0" font-size="12">Sprint planning before each sprint starts</text>
+<line x1="60" y1="305" x2="560" y2="305" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="331" fill="#c4b5fd" font-size="12" font-weight="bold">WIP limit</text>
+<text x="205" y="331" fill="#e2e8f0" font-size="12">Implicit — capacity is committed at planning</text>
+<line x1="60" y1="341" x2="560" y2="341" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="367" fill="#c4b5fd" font-size="12" font-weight="bold">Mid-cycle changes</text>
+<text x="205" y="367" fill="#e2e8f0" font-size="12">Avoided; sprint scope is locked once started</text>
+<line x1="60" y1="377" x2="560" y2="377" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="403" fill="#c4b5fd" font-size="12" font-weight="bold">Ceremonies</text>
+<text x="205" y="403" fill="#e2e8f0" font-size="12">Daily standup, sprint review, retrospective</text>
+<line x1="60" y1="413" x2="560" y2="413" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="439" fill="#c4b5fd" font-size="12" font-weight="bold">Board state</text>
+<text x="205" y="439" fill="#e2e8f0" font-size="12">Resets every sprint (To do / Doing / Done)</text>
+<line x1="60" y1="449" x2="560" y2="449" stroke="#334155" stroke-width="0.5"/>
+
+<text x="60" y="475" fill="#c4b5fd" font-size="12" font-weight="bold">Key metric</text>
+<text x="205" y="475" fill="#e2e8f0" font-size="12">Velocity — story points completed per sprint</text>
+
+<!-- Scrum diagram: repeating sprint boxes -->
+<text x="60" y="515" fill="#f8fafc" font-size="13" font-weight="bold">Cycle shape</text>
+
+<rect x="60" y="528" width="155" height="50" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="137" y="558" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="bold">Sprint 1</text>
+<line x1="215" y1="553" x2="230" y2="553" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="230" y="528" width="155" height="50" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="307" y="558" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="bold">Sprint 2</text>
+<line x1="385" y1="553" x2="400" y2="553" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="400" y="528" width="155" height="50" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+<text x="477" y="558" text-anchor="middle" fill="#f8fafc" font-size="12.5" font-weight="bold">Sprint 3</text>
+
+<text x="307" y="600" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Each sprint repeats: Planning → Daily → Review → Retro</text>
+
+<rect x="60" y="630" width="500" height="70" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="75" y="650" fill="#dbeafe" font-size="12" font-weight="bold">Best fit</text>
+<text x="75" y="668" fill="#bfdbfe" font-size="11.5">Predictable scope, cross-functional team, regular</text>
+<text x="75" y="684" fill="#bfdbfe" font-size="11.5">releases at a fixed rhythm.</text>
+
+<rect x="60" y="710" width="500" height="90" rx="8" fill="#3b0d0d" stroke="#7f1d1d" stroke-width="1"/>
+<text x="75" y="730" fill="#fecaca" font-size="12" font-weight="bold">⚠ Watch out</text>
+<text x="75" y="748" fill="#fca5a5" font-size="11.5">Scope creep mid-sprint breaks the timebox; unfinished</text>
+<text x="75" y="764" fill="#fca5a5" font-size="11.5">items just roll into the next sprint instead of forcing a</text>
+<text x="75" y="780" fill="#fca5a5" font-size="11.5">conversation about what "done" actually means.</text>
+
+<!-- PANEL KANBAN -->
+<rect x="620" y="120" width="540" height="700" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<circle cx="655" cy="160" r="18" fill="#0d9488"/>
+<text x="655" y="165" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="bold">K</text>
+<text x="685" y="156" fill="#f8fafc" font-size="19" font-weight="bold">Kanban</text>
+<text x="685" y="176" fill="#94a3b8" font-size="12.5">Continuous flow, explicit WIP limits</text>
+<line x1="640" y1="195" x2="1140" y2="195" stroke="#334155" stroke-width="1"/>
+
+<text x="640" y="223" fill="#99f6e4" font-size="12" font-weight="bold">Cadence</text>
+<text x="785" y="223" fill="#e2e8f0" font-size="12">Continuous flow, no fixed iterations</text>
+<line x1="640" y1="233" x2="1140" y2="233" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="259" fill="#99f6e4" font-size="12" font-weight="bold">Roles</text>
+<text x="785" y="259" fill="#e2e8f0" font-size="12">No fixed roles defined by the framework</text>
+<line x1="640" y1="269" x2="1140" y2="269" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="295" fill="#99f6e4" font-size="12" font-weight="bold">Planning</text>
+<text x="785" y="295" fill="#e2e8f0" font-size="12">Continuous; pull new work as capacity frees</text>
+<line x1="640" y1="305" x2="1140" y2="305" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="331" fill="#99f6e4" font-size="12" font-weight="bold">WIP limit</text>
+<text x="785" y="331" fill="#e2e8f0" font-size="12">Explicit — caps items allowed per column</text>
+<line x1="640" y1="341" x2="1140" y2="341" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="367" fill="#99f6e4" font-size="12" font-weight="bold">Mid-flow changes</text>
+<text x="785" y="367" fill="#e2e8f0" font-size="12">Allowed anytime; reprioritize freely</text>
+<line x1="640" y1="377" x2="1140" y2="377" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="403" fill="#99f6e4" font-size="12" font-weight="bold">Ceremonies</text>
+<text x="785" y="403" fill="#e2e8f0" font-size="12">Optional; only if the team needs them</text>
+<line x1="640" y1="413" x2="1140" y2="413" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="439" fill="#99f6e4" font-size="12" font-weight="bold">Board state</text>
+<text x="785" y="439" fill="#e2e8f0" font-size="12">Persistent; the board never resets</text>
+<line x1="640" y1="449" x2="1140" y2="449" stroke="#334155" stroke-width="0.5"/>
+
+<text x="640" y="475" fill="#99f6e4" font-size="12" font-weight="bold">Key metric</text>
+<text x="785" y="475" fill="#e2e8f0" font-size="12">Lead time / cycle time per work item</text>
+
+<!-- Kanban diagram: continuous board with WIP limit -->
+<text x="640" y="515" fill="#f8fafc" font-size="13" font-weight="bold">Cycle shape</text>
+
+<rect x="640" y="528" width="110" height="80" rx="6" fill="#374151" stroke="#64748b" stroke-width="1"/>
+<text x="695" y="545" text-anchor="middle" fill="#f8fafc" font-size="10.5" font-weight="bold">Backlog</text>
+<rect x="653" y="553" width="84" height="14" rx="3" fill="#4b5563"/>
+<rect x="653" y="571" width="84" height="14" rx="3" fill="#4b5563"/>
+
+<rect x="763" y="528" width="110" height="80" rx="6" fill="#3b0d0d" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="818" y="545" text-anchor="middle" fill="#fed7aa" font-size="10.5" font-weight="bold">Doing (WIP:3)</text>
+<rect x="776" y="553" width="84" height="14" rx="3" fill="#7c2d12"/>
+<rect x="776" y="571" width="84" height="14" rx="3" fill="#7c2d12"/>
+<rect x="776" y="589" width="84" height="14" rx="3" fill="#7c2d12"/>
+
+<rect x="886" y="528" width="110" height="80" rx="6" fill="#374151" stroke="#64748b" stroke-width="1"/>
+<text x="941" y="545" text-anchor="middle" fill="#f8fafc" font-size="10.5" font-weight="bold">Review</text>
+<rect x="899" y="553" width="84" height="14" rx="3" fill="#4b5563"/>
+
+<rect x="1009" y="528" width="110" height="80" rx="6" fill="#134e4a" stroke="#0d9488" stroke-width="1"/>
+<text x="1064" y="545" text-anchor="middle" fill="#f8fafc" font-size="10.5" font-weight="bold">Done</text>
+<rect x="1022" y="553" width="84" height="14" rx="3" fill="#0f766e"/>
+<rect x="1022" y="571" width="84" height="14" rx="3" fill="#0f766e"/>
+
+<text x="880" y="628" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Cards flow continuously; the WIP limit stops overload</text>
+
+<rect x="640" y="655" width="500" height="70" rx="8" fill="#0f2942" stroke="#2563eb" stroke-width="1"/>
+<text x="655" y="675" fill="#dbeafe" font-size="12" font-weight="bold">Best fit</text>
+<text x="655" y="693" fill="#bfdbfe" font-size="11.5">Support/maintenance work, variable priorities,</text>
+<text x="655" y="709" fill="#bfdbfe" font-size="11.5">steady throughput without fixed release dates.</text>
+
+<rect x="640" y="735" width="500" height="65" rx="8" fill="#3b0d0d" stroke="#7f1d1d" stroke-width="1"/>
+<text x="655" y="755" fill="#fecaca" font-size="12" font-weight="bold">⚠ Watch out</text>
+<text x="655" y="773" fill="#fca5a5" font-size="11.5">Without discipline on WIP limits, "continuous flow"</text>
+<text x="655" y="789" fill="#fca5a5" font-size="11.5">quietly turns into everyone starting everything at once.</text>
+
+<!-- Bottom summary -->
+<rect x="40" y="840" width="1120" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="600" y="868" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="bold">Core difference</text>
+<text x="600" y="892" text-anchor="middle" fill="#cbd5e1" font-size="12.5">Scrum optimizes for predictable delivery inside fixed time-boxes; Kanban optimizes for continuous</text>
+<text x="600" y="910" text-anchor="middle" fill="#cbd5e1" font-size="12.5">throughput by capping work-in-progress instead of capping time.</text>
+
+<text x="600" y="960" text-anchor="middle" fill="#64748b" font-size="12">Both are pull-based and value working software over ceremony — the difference is what they fix: time (Scrum) or WIP (Kanban).</text>
+</svg>
