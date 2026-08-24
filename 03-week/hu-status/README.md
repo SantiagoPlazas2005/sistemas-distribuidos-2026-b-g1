@@ -30,8 +30,8 @@
 ## 1. User stories worked this week
 | HU ID | Title | Status (todo/doing/done) | Evidence (PR or commit URL) |
 |---|---|---|---|
-| HU-PDR-08 | Correct sections 03 - Open questions and 04 - Business glossary in the business PDR | done | https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/main/03-week/docs/pdr/01_PDR_negocio_v1.md |
-| HU-ADR-06 (B) | Correct ADR-001: move from 4 independent databases to a single logical database with one schema per service | done | https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/main/03-week/docs/adr/adr-001-architecture_v1.md |
+| HU-PDR-08 | Correct sections 03 - Open questions and 04 - Business glossary in the business PDR | done | https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/a8d2bd29f812bbeb1c8575283411d4a1748c95c4/03-week/hu-status/docs/01_PDR_negocio_v2.md |
+| HU-ADR-06 (B) | Correct ADR-001: move from 4 independent databases to a single logical database with one schema per service | done | https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/a8d2bd29f812bbeb1c8575283411d4a1748c95c4/03-week/hu-status/docs/adr-001-architecture_v2.md|
 
 ## 2. My individual contribution
 
