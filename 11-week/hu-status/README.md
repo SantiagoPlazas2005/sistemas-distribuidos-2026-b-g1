@@ -18,9 +18,9 @@
 | W11-CP2 | Structured log contract | done | [753acb9](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/753acb9) |
 | W11-CP3 | Instrumentation code and test in synkro-workflow | done | [bf3c354](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/bf3c354), [8bacfff](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/8bacfff) |
 | W11-CP4 | Golden signals and metric catalog | done | [b1bbf38](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/b1bbf38) |
-| W11-CP6 | SLIs, SLOs and error budget | done | [b5d0a7a](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/b5d0a7a), [](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/) |
+| W11-CP6 | SLIs, SLOs and error budget | done | [b5d0a7a](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/b5d0a7a), [0b6691f](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/0b6691f) |
 | W11-CP7 | Burn-rate alerts | done | [](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/) |
-| W11-CP8 | Runbook for the fast-burn alert | done | [](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/) |
+| W11-CP8 | Runbook for the fast-burn alert | done | [eec41c9](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/eec41c9) |
 | W11-CP9 | Incident drill and blameless postmortem | done | [](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/commit/) |
 
 ## 2. My individual contribution
