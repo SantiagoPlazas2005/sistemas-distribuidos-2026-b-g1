@@ -29,11 +29,25 @@ If the real number is different, only the budget in requests changes; the percen
 - **Target:** 99.5 % over 30 days.
 - **PromQL:**
 
+~~~
+1 - (
+  sum(rate(workflow_requests_total{route="/sagas/register-sale",outcome="error"}[30d]))
+  /
+  sum(rate(workflow_requests_total{route="/sagas/register-sale"}[30d]))
+)
+~~~
+
 ## SLO 2 - Latency
 
 - **SLI:** requests to `POST /sagas/register-sale` that finish in 0.25 s or less divided by all requests to that route. 0.25 s is the histogram bucket just below the 300 ms of `NFR-001`, so the SLO is slightly stricter than the requirement.
 - **Target:** 95 % over 30 days (the P95 of `NFR-001`).
 - **PromQL:**
+
+~~~
+sum(rate(workflow_request_duration_seconds_bucket{route="/sagas/register-sale",le="0.25"}[30d]))
+/
+sum(rate(workflow_request_duration_seconds_count{route="/sagas/register-sale"}[30d]))
+~~~
 
 ## SLO 3 - Saga integrity
 
@@ -41,6 +55,14 @@ If the real number is different, only the budget in requests changes; the percen
 - **SLI:** sagas that do not end `FAILED` divided by all finished sagas. `COMPENSATED` is not a failure of the system: the saga undid its work correctly.
 - **Target:** 99.9 % over 30 days.
 - **PromQL** (uses the proposed metric `workflow_saga_finished_total`):
+
+~~~
+1 - (
+  sum(increase(workflow_saga_finished_total{status="FAILED"}[30d]))
+  /
+  sum(increase(workflow_saga_finished_total[30d]))
+)
+~~~
 
 ## Error budget
 
