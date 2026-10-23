@@ -1,0 +1,46 @@
+groups:
+  - name: synkro-workflow-register-sale-availability
+    rules:
+      # Fast burn: burn rate 14.4 over 1 hour, confirmed over the last 5 minutes.
+      # Error ratio threshold = 14.4 x 0.005 (budget of the 99.5 % SLO) = 7.2 %.
+      - alert: RegisterSaleAvailabilityFastBurn
+        expr: |
+          (
+            sum(rate(workflow_requests_total{route="/sagas/register-sale",outcome="error"}[1h]))
+            /
+            sum(rate(workflow_requests_total{route="/sagas/register-sale"}[1h]))
+          ) > (14.4 * 0.005)
+          and
+          (
+            sum(rate(workflow_requests_total{route="/sagas/register-sale",outcome="error"}[5m]))
+            /
+            sum(rate(workflow_requests_total{route="/sagas/register-sale"}[5m]))
+          ) > (14.4 * 0.005)
+        labels:
+          severity: page
+          team: synkro-tech
+        annotations:
+          summary: "POST /sagas/register-sale is burning its 30-day error budget 14.4 times too fast"
+          runbook_url: "https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/main/11-week/workshop/07-runbook.md"
+
+      # Slow burn: burn rate 6 over 6 hours, confirmed over the last 30 minutes.
+      # Error ratio threshold = 6 x 0.005 = 3 %.
+      - alert: RegisterSaleAvailabilitySlowBurn
+        expr: |
+          (
+            sum(rate(workflow_requests_total{route="/sagas/register-sale",outcome="error"}[6h]))
+            /
+            sum(rate(workflow_requests_total{route="/sagas/register-sale"}[6h]))
+          ) > (6 * 0.005)
+          and
+          (
+            sum(rate(workflow_requests_total{route="/sagas/register-sale",outcome="error"}[30m]))
+            /
+            sum(rate(workflow_requests_total{route="/sagas/register-sale"}[30m]))
+          ) > (6 * 0.005)
+        labels:
+          severity: ticket
+          team: synkro-tech
+        annotations:
+          summary: "POST /sagas/register-sale is burning its 30-day error budget 6 times too fast"
+          runbook_url: "https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/blob/main/11-week/workshop/07-runbook.md"
