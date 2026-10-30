@@ -1,0 +1,53 @@
+name: Week 13 security checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    name: Scan class repository for secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out class repository history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Scan with Gitleaks
+        uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  sales-authorization-and-dependency-audit:
+    name: Verify Sales authorization and Go dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out Synkro Sales API source
+        uses: actions/checkout@v6
+        with:
+          repository: code-corhuila/synkro-sales-api
+          ref: f163eb60552e72f2f5716dd91cb227ae23aa8683
+          path: sales-api
+          persist-credentials: false
+      - name: Set up Go from the service module
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: sales-api/go.mod
+          cache-dependency-path: sales-api/go.sum
+      - name: Run negative sale-registration authorization test
+        working-directory: sales-api
+        run: go test ./internal/adapter/in/httpapi -run '^TestSalesHTTPRegistrationAndReplay$' -count=1
+      - name: Install govulncheck
+        run: |
+          go install golang.org/x/vuln/cmd/govulncheck@v1.9.0
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+      - name: Audit reachable Go vulnerabilities
+        working-directory: sales-api
+        run: govulncheck ./...
