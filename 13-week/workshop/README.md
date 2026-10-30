@@ -18,7 +18,7 @@ GITHUB_USER: SantiagoPlazas2005
 | CP2 | STRIDE file and PR in `synkro-docs` | [PR #275](https://github.com/code-corhuila/synkro-docs/pull/275); [team docs STRIDE file](../../../synkro-docs/05-architecture/security/stride-SantiagoPlazas2005.md) |
 | CP3 | Three security stories in team project board | [Story 1 — #284](https://github.com/code-corhuila/synkro-docs/issues/284), [Story 2 — #285](https://github.com/code-corhuila/synkro-docs/issues/285), [Story 3 — #286](https://github.com/code-corhuila/synkro-docs/issues/286) |
 | CP4 | Security workflow and real GitHub Actions run | [`04-security-ci/README.md`](./04-security-ci/README.md); [successful Actions run #2](https://github.com/SantiagoPlazas2005/sistemas-distribuidos-2026-b-g1/actions/runs/41028704389) |
-| CP5 | Submit the required links through the class platform | Submission URL/status: pending; do not claim an in-class submission unless it exists |
+| CP5 | Submit the required links through the class platform | Santiago reports submitting the general GitHub repository and Google Docs links; no separate submission receipt URL recorded |
 
 ## Physical book evidence
 
