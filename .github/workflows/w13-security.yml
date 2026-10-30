@@ -39,7 +39,8 @@ jobs:
       - name: Set up Go from the service module
         uses: actions/setup-go@v6
         with:
-          go-version-file: sales-api/go.mod
+          # go.mod requires at least 1.26.9; use the patched 1.26.10 toolchain.
+          go-version: "1.26.10"
           cache-dependency-path: sales-api/go.sum
       - name: Run negative sale-registration authorization test
         working-directory: sales-api
