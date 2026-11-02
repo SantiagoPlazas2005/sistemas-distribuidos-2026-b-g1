@@ -1,6 +1,7 @@
 <!-- CONFIG
 FULL_NAME: Fredman Santiago Plazas Artunduaga
 GITHUB_USER: SantiagoPlazas2005
+- STORIES: https://github.com/code-corhuila/synkro-docs/issues/284, https://github.com/code-corhuila/synkro-docs/issues/285, https://github.com/code-corhuila/synkro-docs/issues/286
 -->
 
 # Week 13 threat-modeling workshop — Santiago Plazas
